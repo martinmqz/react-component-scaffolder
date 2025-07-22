@@ -1,0 +1,49 @@
+{
+  "name": "react-component-scaffolder",
+  "version": "1.0.0",
+  "description": "CLI tool for scaffolding accessible React components with built-in Storybook stories,  Jest tests, and markdown documentation",
+  "bin": {
+    "react-component-scaffolder": "dist/generateComponent.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "homepage": "https://github.com/martinmqz/react-component-scaffolder#readme",
+  "bugs": {
+    "url": "https://github.com/martinmqz/react-component-scaffolder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinmqz/react-component-scaffolder.git"
+  },
+  "license": "MIT",
+  "author": "martinmqz",
+  "keywords": [
+    "react",
+    "typescript",
+    "storybook",
+    "jest",
+    "scaffold",
+    "automation",
+    "cli",
+    "accessibility",
+    "component-generator",
+    "developer-tools",
+    "open-source"
+  ]
+}

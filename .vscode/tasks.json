@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "React Dev Scaffolder",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "ts-node",
+        "scripts/generateComponent.ts",
+        "${input:componentName}",
+        "--with-tests",
+        "--with-story",
+        "--with-docs",
+        "--lang=${input:language}"
+      ],
+      "group": "build",
+      "problemMatcher": ["$tsc"],
+      "detail": "Scaffold React component with tests, Storybook, and optional JS/TS output"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "componentName",
+      "type": "promptString",
+      "description": "Component name (e.g., Modal, FormFieldGroup)"
+    },
+    {
+      "id": "language",
+      "type": "pickString",
+      "description": "Choose language output",
+      "options": ["ts", "js"],
+      "default": "ts"
+    },
+    {
+      "id": "addDocs",
+      "type": "pickString",
+      "description": "Generate markdown docs?",
+      "options": ["yes", "no"],
+      "default": "yes"
+    }
+  ]
+}
