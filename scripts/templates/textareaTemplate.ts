@@ -1,5 +1,5 @@
 export const textareaTemplate = (name: string) => `
-import React from 'react';
+import React from 'react'
 
 export const ${name} = ({ id = '${name}Area', ...props }) => {
   return (
@@ -10,6 +10,6 @@ export const ${name} = ({ id = '${name}Area', ...props }) => {
       required
       {...props}
     />
-  );
-};
-`;
+  )
+}
+`

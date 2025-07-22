@@ -1,5 +1,5 @@
 export const inputTemplate = (name: string) => `
-import React from 'react';
+import React from 'react'
 
 export const ${name} = ({ id = '${name}Input', ...props }) => {
   return (
@@ -11,6 +11,6 @@ export const ${name} = ({ id = '${name}Input', ...props }) => {
       required
       {...props}
     />
-  );
-};
-`;
+  )
+}
+`

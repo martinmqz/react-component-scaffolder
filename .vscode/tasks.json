@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "React Dev Scaffolder",
+      "label": "React Component Scaffolder",
       "type": "shell",
       "command": "npx",
       "args": [
