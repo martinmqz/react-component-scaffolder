@@ -7,7 +7,7 @@ if (!componentName) {
   process.exit(1)
 }
 
-const componentPath = path.join('src', componentName, `${componentName}.tsx`)
+const componentPath = path.join('src', 'components', componentName, `${componentName}.tsx`)
 if (!fs.existsSync(componentPath)) {
   console.error(`❌ Component "${componentName}" not found at ${componentPath}`)
   process.exit(1)

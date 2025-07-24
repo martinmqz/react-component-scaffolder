@@ -57,6 +57,7 @@ npx react-component-scaffolder AccessibleLabel --with-tests --with-story --with-
 ## 🧰 Flags
 | Flag | Description |
 |------|-------------|
+| --lang=js \| ts | Creates .js/.jsx files. Defaults to ts/tsx when flag ommitted
 | --with-tests | Adds Jest test file | 
 | --with-story | Adds Storybook story | 
 | --with-docs | Adds Markdown file with prop documentation |
@@ -117,12 +118,16 @@ Built by martinmqz — scalable UI, accessibility, and automation enthusiast.
 ## 📄 License
 ### MIT
 
-
 ## 📦 Changelog
 ### v1.0.0
-
 Initial release
 
+### v1.0.1
 Added support for TypeScript and JavaScript
 
 Optional file generation for tests, Storybook, and Markdown documentation
+
+### v1.0.2
+Update
+
+Changed output path to ./src/components folder

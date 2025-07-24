@@ -33,7 +33,7 @@ const templateFn = getTemplateByTag(tag)
 const componentCode = templateFn(name)
 
 const extension = lang === 'js' ? 'js' : 'tsx'
-const componentDir = path.join('src', name)
+const componentDir = path.join('src', 'components', name)
 fs.mkdirSync(componentDir, { recursive: true })
 
 // Write component file

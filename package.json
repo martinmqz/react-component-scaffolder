@@ -1,6 +1,6 @@
 {
   "name": "react-component-scaffolder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for scaffolding accessible React components with built-in Storybook stories,  Jest tests, and markdown documentation",
   "bin": {
     "react-component-scaffolder": "dist/generateComponent.js"
