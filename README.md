@@ -4,6 +4,7 @@ Welcome to the react-component-scaffolder CLI tool! This utility streamlines the
 [![npm version](https://img.shields.io/npm/v/react-component-scaffolder.svg)](https://www.npmjs.com/package/react-component-scaffolder)
 [![npm downloads](https://img.shields.io/npm/dm/react-component-scaffolder.svg)](https://www.npmjs.com/package/react-component-scaffolder)
 
+
 ## ✨ Features
 - **Language Flexibility** — Choose between TypeScript (`ts`) or JavaScript (`js`) by using the `--lang` flag
 - **Optional File Generation** — Add:
@@ -15,6 +16,7 @@ Welcome to the react-component-scaffolder CLI tool! This utility streamlines the
 - **Contributor Friendly** — Designed for open source extension, team templates, and automation
 - ⚙️ VS Code task integration and CLI flags
 
+
 ## 🚀 Installation
 ```bash
 npm install -g react-component-scaffolder
@@ -24,34 +26,40 @@ Or use it instantly:
 npx react-component-scaffolder AccessibleButton --with-tests --with-story --with-docs
 ```
 
+
 ## 🛠️ Usage
 ### Examples
 ```
-react-component-scaffolder MyComponent --with-tests --with-story --with-docs --element=button
+react-component-scaffolder MyComponent --element=button
 ```
 
-#### AccessibleButton
+#### Accessible Button
 ```
 npx react-component-scaffolder AccessibleButton --with-tests --with-story --with-docs
 ```
 
-#### AccessibleInput
+#### Accessible Input
 ```
-npx react-component-scaffolder AccessibleInput --with-tests --with-story --with-docs
+npx react-component-scaffolder AccessibleInput --with-tests --with-story
 ```
-#### AccessibleForm
+#### Accessible Form
 ```
-npx react-component-scaffolder AccessibleForm --with-tests --with-story --with-docs
-```
-
-#### AccessibleTextarea
-```
-npx react-component-scaffolder AccessibleTextarea --with-tests --with-story --with-docs
+npx react-component-scaffolder AccessibleForm --with-story
 ```
 
-#### AccessibleLabel
+#### Accessible Textarea
+```
+npx react-component-scaffolder AccessibleTextarea
+```
+
+#### Accessible Label
 ```
 npx react-component-scaffolder AccessibleLabel --with-tests --with-story --with-docs
+```
+
+#### Accessible Link
+```
+npx react-component-scaffolder AccessibleLink
 ```
 
 ## 🧰 Flags
@@ -63,6 +71,7 @@ npx react-component-scaffolder AccessibleLabel --with-tests --with-story --with-
 | --with-docs | Adds Markdown file with prop documentation |
 | --element | Override tag detection (e.g., input, form) |
 | --help | Shows help info |
+
 
 ## 📦 VS Code Integration
 Add this to .vscode/tasks.json to run from Command Palette:
@@ -131,3 +140,6 @@ Optional file generation for tests, Storybook, and Markdown documentation
 Update
 
 Changed output path to ./src/components folder
+
+### v1.0.3
+Update: Support links (anchor tags)

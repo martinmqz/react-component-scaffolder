@@ -4,6 +4,7 @@ import { formTemplate } from './templates/formTemplate'
 import { textareaTemplate } from './templates/textareaTemplate'
 import { labelTemplate } from './templates/labelTemplate'
 import { defaultTemplate } from './templates/componentTemplate'
+import { anchorTemplate } from './templates/anchorTemplate'
 
 type TemplateMap = {
   button: (name: string) => string;
@@ -11,6 +12,7 @@ type TemplateMap = {
   form: (name: string) => string;
   textarea: (name: string) => string;
   label: (name: string) => string;
+  link: (name: string) => string;
 };
 
 const map: TemplateMap = {
@@ -19,6 +21,7 @@ const map: TemplateMap = {
   form: formTemplate,
   textarea: textareaTemplate,
   label: labelTemplate,
+  link: anchorTemplate
 };
 
 export const getTemplateByTag = (tag: string) => {

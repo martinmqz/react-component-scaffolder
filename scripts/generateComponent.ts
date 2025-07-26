@@ -28,7 +28,16 @@ Options:
   process.exit(0)
 }
 
-const tag = explicitTag || name.toLowerCase()
+let implicitTag = null
+if (name.toLowerCase().endsWith('button')) implicitTag = 'button'
+if (name.toLowerCase().endsWith('form')) implicitTag = 'form'
+if (name.toLowerCase().endsWith('input')) implicitTag = 'input'
+if (name.toLowerCase().endsWith('label')) implicitTag = 'label'
+if (name.toLowerCase().endsWith('textarea')) implicitTag = 'textarea'
+if (name.toLowerCase().endsWith('link')) implicitTag = 'link'
+
+
+const tag = explicitTag || implicitTag || name.toLowerCase()
 const templateFn = getTemplateByTag(tag)
 const componentCode = templateFn(name)
 
