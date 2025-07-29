@@ -1,5 +1,5 @@
 # react-component-scaffolder
-Welcome to the react-component-scaffolder CLI tool! This utility streamlines the creation of accessible React components with TypeScript or JavaScript, offering options for tests, Storybook stories, and Markdown documentation.
+react-component-scaffolder CLI tool. This utility streamlines the creation of accessible React components with TypeScript or JavaScript, offering options for tests, Storybook stories, and Markdown documentation.
 
 [![npm version](https://img.shields.io/npm/v/react-component-scaffolder.svg)](https://www.npmjs.com/package/react-component-scaffolder)
 [![npm downloads](https://img.shields.io/npm/dm/react-component-scaffolder.svg)](https://www.npmjs.com/package/react-component-scaffolder)
